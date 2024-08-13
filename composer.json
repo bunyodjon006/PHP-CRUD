@@ -1,0 +1,21 @@
+{
+  "name": "bunyodjon/items_car_api",
+  "description": "Items of collection",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "bunyod",
+      "email": "teamlead006005@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-pdo": "*"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
