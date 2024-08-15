@@ -1,18 +1,16 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Core;
+
 use PDO;
 
 class Database
 {
-private PDO|null $pdo=null;
+    private PDO|null $pdo = null;
 
-
-
-
-
-    public function  connect():PDO|null
+    public function connect(): PDO|null
     {
         if (!$this->pdo) {
             $this->pdo = new PDO('mysql:host=localhost;dbname=items_car', 'root', '');
@@ -22,7 +20,5 @@ private PDO|null $pdo=null;
         }
         return $this->pdo;
     }
-
-
 
 }
